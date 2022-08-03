@@ -1,0 +1,61 @@
+@use 'shared';
+.Header {
+  padding: 30px;
+  padding-left: 200px;
+  font-family: shared.$source-sans-pro;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  background-color: teal;
+  .Logo {
+    color: black;
+    font-size: 80px;
+  }
+  .Nav {
+    color: white;
+    font-size: 30px;
+    gap:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .CartButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      width: 64px;
+      height: 64px;
+      background-color: white;
+      border-radius: 50%;
+      .IconWrapper {
+        width: 24px;
+        height: 24px;
+        svg {
+          width: 28px;
+          height: 28px;
+          fill: black;
+          stroke: black;
+        }
+        .Counter {
+          font-size: 20px;
+          position: relative;
+          bottom: 10px;
+          left: -25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: salmon;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          color: black;
+        }
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
