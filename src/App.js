@@ -1,10 +1,11 @@
 import { BrowserRouter } from 'react-router-dom';
-import { Main } from './components';
+import { Main, Header } from './components';
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+        <Header />
         <Main />
       </BrowserRouter>
     </div>
