@@ -2,6 +2,9 @@
   "name": "shopping-cart",
   "version": "0.1.0",
   "private": true,
+  "sideEffects": [
+    "*.js"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -36,7 +39,8 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^7.0.1",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "sass": "^1.54.1",
+    "sass-loader": "npm:sass@^1.54.1"
   }
 }
